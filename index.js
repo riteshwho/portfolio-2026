@@ -4,7 +4,7 @@
    ============================================================ */
 window.PORTFOLIO_CONFIG = {
   youtubeChannelUrl: "https://www.youtube.com/@riteshwho",
-  instagramUrl: "https://www.instagram.com/riteshmotionedit/",
+  instagramUrl: "https://www.instagram.com/ritesh.videoedit/",
   
   // 01 — SHORT FORM CONTENT (9:16 Aspect Ratio)
   shortFormProjects: [

@@ -1593,11 +1593,75 @@ header {
   
   .hero-project-card {
     position: absolute;
-    right: 2%;
-    bottom: 6%;
-    width: clamp(108px, 28vw, 124px);
+    right: 3%;
+    bottom: 7%;
+    width: clamp(62px, 17vw, 72px);
+    padding: 0.18rem 0.22rem;
+    border-radius: 0.5rem;
+    gap: 0.14rem;
+    box-shadow: 0 6px 14px -3px rgba(0, 0, 0, 0.22), 0 0 0 1px rgba(0, 0, 0, 0.05);
     box-sizing: border-box;
     z-index: 15;
+    animation: floatCardMobile 4.5s ease-in-out infinite;
+  }
+
+  .hero-project-header {
+    padding: 0.02rem 0.04rem 0;
+  }
+
+  .hero-project-badge-wrap {
+    gap: 0.14rem;
+  }
+
+  .hero-project-dot {
+    width: 0.2rem;
+    height: 0.2rem;
+    box-shadow: 0 0 4px rgba(229, 57, 53, 0.6);
+  }
+
+  .hero-project-label {
+    font-size: 0.28rem;
+    letter-spacing: 0.03em;
+  }
+
+  .hero-project-tag {
+    font-size: 0.24rem;
+    padding: 0.04rem 0.16rem;
+  }
+
+  .hero-project-thumb-box {
+    border-radius: 0.32rem;
+  }
+
+  .hero-project-footer {
+    gap: 0.12rem;
+    padding: 0.02rem 0.04rem 0.04rem;
+  }
+
+  .hero-project-meta {
+    gap: 0.04rem;
+  }
+
+  .hero-project-title {
+    font-size: 0.32rem;
+    line-height: 1.1;
+  }
+
+  .hero-project-category {
+    font-size: 0.24rem;
+    gap: 0.1rem;
+  }
+
+  .hero-project-cta {
+    padding: 0.12rem 0.25rem;
+    font-size: 0.25rem;
+    gap: 0.1rem;
+    box-shadow: 0 1px 4px rgba(229, 57, 53, 0.3);
+  }
+
+  .hero-project-cta-icon {
+    width: 5px;
+    height: 5px;
   }
 
   .hero-badge-color {
@@ -1626,6 +1690,20 @@ header {
 }
 
 /* Keyframe Animations */
+@keyframes floatCardMobile {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-2px) rotate(-0.3deg);
+  }
+  50% {
+    transform: translateY(-4px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-2px) rotate(0.3deg);
+  }
+}
 @keyframes floatCard {
   0%, 100% {
     transform: translateY(0px) rotate(0deg);

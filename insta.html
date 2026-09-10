@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Instafeed on Your Website</title>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto+Slab:wght@400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		a img{ 
+			width: 30%;
+			margin: calc(10%/6);
+		}
+		nav{
+			text-transform: uppercase;
+			border-bottom: 2px solid grey;
+			width: 30%;
+			margin-left: calc(10%/6);
+			padding: 20px;
+			font-family: 'Raleway', sans-serif;
+			font-size: 1.5em;
+		}
+		body{
+			background-color: #EEEEEE;
+		}
+	</style>
+</head>
+<body>
+	<nav>Ritesh/Sinha</nav>
+    <div id="instafeed-container"></div>
+
+
+
+	<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+	<script type="text/javascript">
+	var userFeed = new Instafeed({
+		get: 'user',
+		target: "instafeed-container",
+    	resolution: 'low_resolution',
+		accessToken: 'IGQVJWbmIyV2F1X2F4Q1NUUnVOMGRMbk5HRGtnSXVZALThpdjlDQ2dKaWRsRGtXU3hhX0hKU2pSTjRSeDRRSGtKOXhSUEhGUlBrVU16NExjem5CdlNHSkhrYW9IcWVBNm90aDRQbC0ydnRGZAWVWM2hscwZDZD'
+	});
+	userFeed.run();
+	</script>
+</body>
+</html>

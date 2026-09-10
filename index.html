@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ritesh Sinha | Video Editor & Motion Designer Portfolio 2026</title>
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Legacy fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Roboto+Slab:wght@400;700&family=Source+Sans+Pro:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome & Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brandRed: '#E53935',
+              brandBg: '#f2f0ed',
+              brandDark: '#1A1A1A',
+            },
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      
+      <!-- 1. Header / Navbar -->
+      <header class="hero-navbar">
+        <div class="hero-container hero-navbar-inner">
+          <a href="#home" class="flex items-center gap-2.5 text-xl font-bold tracking-tight text-[#1A1A1A] no-underline">
+            <span class="w-8 h-8 rounded-lg bg-black text-white flex items-center justify-center text-lg font-black shadow-sm">R</span>
+            <span class="font-extrabold tracking-tight">Ritesh Sinha</span>
+          </a>
+          
+          <!-- Navigation links -->
+          <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600 bg-[#f2f0ed]/80 backdrop-blur-md px-6 py-2.5 rounded-full border border-gray-300/50 shadow-sm">
+            <a href="#home" class="text-[#E53935] font-semibold transition hover:text-red-600 no-underline">Home</a>
+            <a href="#about" class="text-gray-700 hover:text-black transition no-underline">About</a>
+            <a href="#work" class="text-gray-700 hover:text-black transition no-underline">Work</a>
+            <a href="#services" class="text-gray-700 hover:text-black transition no-underline">Services</a>
+            <a href="#contact" class="text-gray-700 hover:text-black transition no-underline">Contact</a>
+          </nav>
+
+          <div class="flex items-center gap-3">
+            <a href="#contact" class="flex items-center gap-2 bg-black text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-gray-800 transition shadow-md no-underline">
+              <span>Let's Talk</span>
+              <div class="bg-white text-black rounded-full p-1 text-xs flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-10 h-10 rounded-full bg-white/80 border border-gray-300/50 shadow-sm text-black focus:outline-none" aria-label="Toggle navigation">
+              <svg id="menu-icon-open" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+              <svg id="menu-icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu" class="hidden md:hidden fixed inset-x-4 top-20 bg-white/95 backdrop-blur-lg rounded-2xl p-6 shadow-2xl border border-gray-200/70 z-50 flex flex-col gap-4 text-center">
+        <a href="#home" class="mobile-nav-link text-[#E53935] font-semibold py-2 no-underline">Home</a>
+        <a href="#about" class="mobile-nav-link text-gray-800 hover:text-[#E53935] font-medium py-2 no-underline">About</a>
+        <a href="#work" class="mobile-nav-link text-gray-800 hover:text-[#E53935] font-medium py-2 no-underline">Work</a>
+        <a href="#services" class="mobile-nav-link text-gray-800 hover:text-[#E53935] font-medium py-2 no-underline">Services</a>
+        <a href="#contact" class="mobile-nav-link text-gray-800 hover:text-[#E53935] font-medium py-2 no-underline">Contact</a>
+      </div>
+
+      <!-- 2. Main Hero Content Body (Centered in available viewport) -->
+      <div class="hero-body">
+        <div class="hero-container hero-main-grid">
+          
+          <!-- Left Content Column -->
+          <div class="hero-content">
+            <div class="hero-tagline">
+              <span class="hero-tagline-bar"></span>
+              <span>PORTFOLIO 2026</span>
+            </div>
+            
+            <h1 class="hero-heading font-sans">
+              Editing <br />
+              Stories into <br />
+              <span class="text-[#E53935]">Motion</span>
+            </h1>
+
+            <p class="hero-description">
+              Video Editor &amp; Motion Designer crafting dynamic cuts, seamless transitions, and visual stories.
+            </p>
+
+            <div class="pt-1">
+              <a href="#work" class="hero-cta-btn group">
+                <span>Explore My Reel</span>
+                <span class="hero-cta-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Visual Column (Strictly bounded .hero-visual) -->
+          <div class="hero-visual-wrapper">
+            <div class="hero-visual">
+              
+              <!-- Layer 1: Red Circle Focal Backdrop -->
+              <div class="hero-circle pulse-glow"></div>
+
+              <!-- Layer 2: Faded Watermark Text "EDIT" -->
+              <span class="hero-watermark-text font-sans">EDIT</span>
+
+              <!-- Layer 3: Cutout Image -->
+              <div class="hero-cutout-wrap">
+                <img 
+                  src="images/hero-cutout.png" 
+                  alt="Ritesh Sinha - Video Editor &amp; Motion Designer" 
+                  class="hero-cutout-img drop-shadow-2xl"
+                />
+              </div>
+
+              <!-- Layer 4: Floating Skill Badges (Positioned relative to .hero-visual) -->
+              <!-- Badge 1: Video Editing (Upper-Right) -->
+              <div class="hero-badge hero-badge-video floating-badge-1">
+                <div class="hero-badge-icon">
+                  <i class="fas fa-film"></i>
+                </div>
+                <span class="hero-badge-text">Video Editing</span>
+              </div>
+
+              <!-- Badge 2: Color Grading (Left Side) -->
+              <div class="hero-badge hero-badge-color floating-badge-3">
+                <span class="text-[#E53935] text-xs">✦</span>
+                <span class="hero-badge-text">Color Grading</span>
+              </div>
+
+              <!-- Badge 3: Motion Design (Lower-Left) -->
+              <div class="hero-badge hero-badge-motion floating-badge-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#E53935] animate-pulse"></span>
+                <span class="hero-badge-text">Motion Design</span>
+              </div>
+
+              <!-- Layer 5: Featured Showreel Card (Lower-Right of visual) -->
+              <div class="featured-card hero-showreel-card">
+                <!-- Timeline Header & Playback Badge -->
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-1.5">
+                    <span class="inline-flex items-center gap-1 bg-red-100 text-[#E53935] text-[10px] font-black px-2 py-0.5 rounded-full">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                      PLAY REEL
+                    </span>
+                    <span class="text-[10px] text-gray-400 font-semibold">4K • 60FPS</span>
+                  </div>
+                  <span class="text-[10px] font-mono font-bold text-gray-500 tracking-wider">00:01:24:18</span>
+                </div>
+
+                <!-- Video Thumbnail Preview -->
+                <div class="relative w-full h-20 sm:h-22 md:h-24 rounded-xl overflow-hidden bg-gray-900 group shadow-inner">
+                  <img src="pexels-pixabay-276452.jpg" alt="Featured Reel Thumbnail" class="w-full h-full object-cover opacity-75 group-hover:scale-105 transition-transform duration-500" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  
+                  <!-- Play Button Overlay -->
+                  <div class="absolute inset-0 flex items-center justify-center">
+                    <div class="w-8 h-8 md:w-9 md:h-9 rounded-full bg-[#E53935] text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"></polygon></svg>
+                    </div>
+                  </div>
+
+                  <!-- Thumbnail Caption -->
+                  <div class="absolute bottom-1 left-2 right-2 flex justify-between items-center text-white text-[9px] md:text-[10px] font-medium">
+                    <span class="truncate font-semibold drop-shadow">Showreel 2026</span>
+                    <span class="bg-black/60 px-1.5 py-0.5 rounded text-[8px] md:text-[9px] font-mono">01:45</span>
+                  </div>
+                </div>
+
+                <!-- Video Editor Timeline Scrubber UI -->
+                <div class="bg-gray-100/95 rounded-lg p-1.5 md:p-2 flex flex-col gap-1 md:gap-1.5 border border-gray-200/60">
+                  <!-- Video Track V1 -->
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-[8px] md:text-[9px] font-mono font-bold text-gray-400 w-3.5 md:w-4">V1</span>
+                    <div class="flex-1 h-2.5 md:h-3 bg-gray-200 rounded flex gap-0.5 overflow-hidden p-0.5">
+                      <div class="h-full w-[35%] bg-red-500 rounded-sm"></div>
+                      <div class="h-full w-[25%] bg-red-400 rounded-sm"></div>
+                      <div class="h-full w-[40%] bg-red-600 rounded-sm relative">
+                        <div class="absolute top-0 bottom-0 left-[45%] w-0.5 bg-white shadow"></div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Audio Waveform Track A1 -->
+                  <div class="flex items-center gap-1.5">
+                    <span class="text-[8px] md:text-[9px] font-mono font-bold text-gray-400 w-3.5 md:w-4">A1</span>
+                    <div class="flex-1 h-2 md:h-2.5 bg-gray-200 rounded flex items-center justify-between px-1 overflow-hidden">
+                      <div class="w-1 h-1 bg-emerald-500 rounded-full"></div>
+                      <div class="w-1 h-2 bg-emerald-500 rounded-full"></div>
+                      <div class="w-1 h-1.5 bg-emerald-500 rounded-full"></div>
+                      <div class="w-1 h-2.5 bg-emerald-500 rounded-full"></div>
+                      <div class="w-1 h-1 bg-emerald-500 rounded-full"></div>
+                      <div class="w-1 h-2 bg-emerald-500 rounded-full"></div>
+                      <div class="w-1 h-1.5 bg-emerald-500 rounded-full"></div>
+                      <div class="w-1 h-2 bg-emerald-500 rounded-full"></div>
+                      <div class="w-1 h-1 bg-emerald-500 rounded-full"></div>
+                      <div class="w-1 h-2.5 bg-emerald-500 rounded-full"></div>
+                      <div class="w-1 h-1.5 bg-emerald-500 rounded-full"></div>
+                      <div class="w-1 h-2 bg-emerald-500 rounded-full"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 3. Bottom Stats Bar -->
+      <div class="hero-stats-wrapper">
+        <div class="hero-container">
+          <div class="hero-stats-grid">
+            <div class="hero-stat-item">
+              <span class="hero-stat-num">3+</span>
+              <span class="hero-stat-label">Years Experience</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-num">50+</span>
+              <span class="hero-stat-label">Projects Completed</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-num">20+</span>
+              <span class="hero-stat-label">Happy Clients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============================================================
+         WHAT I DO / SERVICES SECTION (2026 CINEMATIC REDESIGN)
+         ============================================================ -->
+    <section class="my-services" id="services">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-14 md:mb-16">
+          <div class="inline-flex items-center gap-3 justify-center mb-3 sm:mb-4">
+            <span class="text-xs sm:text-sm font-extrabold uppercase tracking-[0.25em] text-white/90">WHAT I DO</span>
+            <span class="w-8 h-[2px] bg-[#E53935] inline-block"></span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-[2.75rem] font-black text-white tracking-tight leading-tight m-0 mb-4 font-sans">
+            Turning ideas into <span class="text-[#E53935]">powerful visuals.</span>
+          </h2>
+
+          <p class="text-xs sm:text-sm font-bold uppercase tracking-[0.2em] text-gray-400 m-0">
+            SPECIALIZED POST-PRODUCTION &amp; MOTION SERVICES
+          </p>
+        </div>
+
+        <!-- 4 Services Cards Grid (4 columns desktop, 2 columns tablet, 1 column mobile) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+
+          <!-- 01 — VIDEO EDITING (Featured / Primary Service) -->
+          <article class="service-card featured-service group">
+            <div>
+              <!-- Minimal Line Icon -->
+              <div class="service-icon-box" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+                  <line x1="7" y1="2" x2="7" y2="22"></line>
+                  <line x1="17" y1="2" x2="17" y2="22"></line>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <line x1="2" y1="7" x2="7" y2="7"></line>
+                  <line x1="2" y1="17" x2="7" y2="17"></line>
+                  <line x1="17" y1="17" x2="22" y2="17"></line>
+                  <line x1="17" y1="7" x2="22" y2="7"></line>
+                </svg>
+              </div>
+
+              <!-- Title -->
+              <h3 class="text-lg sm:text-xl font-bold text-white tracking-tight mb-2.5 m-0 font-sans">
+                Video Editing
+              </h3>
+
+              <!-- Description -->
+              <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed font-normal m-0 mb-6 font-sans">
+                Crafting dynamic cuts, rhythmic pacing, and seamless narrative transitions for long-form content, branded campaigns, and creator videos.
+              </p>
+            </div>
+
+            <!-- Bottom Indicator: 01 — -->
+            <div class="flex items-center gap-2 pt-2 border-t border-white/5">
+              <span class="text-xs font-mono font-bold text-[#E53935]">01</span>
+              <span class="service-indicator-line"></span>
+            </div>
+          </article>
+
+          <!-- 02 — MOTION GRAPHICS -->
+          <article class="service-card group">
+            <div>
+              <!-- Minimal Line Icon -->
+              <div class="service-icon-box" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 22 22 22"></polygon>
+                  <line x1="12" y1="2" x2="12" y2="15"></line>
+                  <line x1="2" y1="22" x2="12" y2="15"></line>
+                  <line x1="22" y1="22" x2="12" y2="15"></line>
+                </svg>
+              </div>
+
+              <!-- Title -->
+              <h3 class="text-lg sm:text-xl font-bold text-white tracking-tight mb-2.5 m-0 font-sans">
+                Motion Graphics
+              </h3>
+
+              <!-- Description -->
+              <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed font-normal m-0 mb-6 font-sans">
+                Engaging motion typography, 2D/3D visual elements, title reveals, and animated graphics that communicate ideas with clarity.
+              </p>
+            </div>
+
+            <!-- Bottom Indicator: 02 — -->
+            <div class="flex items-center gap-2 pt-2 border-t border-white/5">
+              <span class="text-xs font-mono font-bold text-[#E53935]">02</span>
+              <span class="service-indicator-line"></span>
+            </div>
+          </article>
+
+          <!-- 03 — SOUND DESIGN -->
+          <article class="service-card group">
+            <div>
+              <!-- Minimal Line Icon -->
+              <div class="service-icon-box" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="4" y1="9" x2="4" y2="15"></line>
+                  <line x1="8" y1="6" x2="8" y2="18"></line>
+                  <line x1="12" y1="3" x2="12" y2="21"></line>
+                  <line x1="16" y1="6" x2="16" y2="18"></line>
+                  <line x1="20" y1="9" x2="20" y2="15"></line>
+                </svg>
+              </div>
+
+              <!-- Title -->
+              <h3 class="text-lg sm:text-xl font-bold text-white tracking-tight mb-2.5 m-0 font-sans">
+                Sound Design
+              </h3>
+
+              <!-- Description -->
+              <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed font-normal m-0 mb-6 font-sans">
+                Immersive audio editing, dialogue cleanup, sound effects, and music mixing that add depth, rhythm, and emotional impact.
+              </p>
+            </div>
+
+            <!-- Bottom Indicator: 03 — -->
+            <div class="flex items-center gap-2 pt-2 border-t border-white/5">
+              <span class="text-xs font-mono font-bold text-[#E53935]">03</span>
+              <span class="service-indicator-line"></span>
+            </div>
+          </article>
+
+          <!-- 04 — COLOR GRADING -->
+          <article class="service-card group">
+            <div>
+              <!-- Minimal Line Icon -->
+              <div class="service-icon-box" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="4" y1="6" x2="20" y2="6"></line>
+                  <line x1="4" y1="12" x2="20" y2="12"></line>
+                  <line x1="4" y1="18" x2="20" y2="18"></line>
+                  <circle cx="8" cy="6" r="2.5" fill="currentColor"></circle>
+                  <circle cx="16" cy="12" r="2.5" fill="currentColor"></circle>
+                  <circle cx="10" cy="18" r="2.5" fill="currentColor"></circle>
+                </svg>
+              </div>
+
+              <!-- Title -->
+              <h3 class="text-lg sm:text-xl font-bold text-white tracking-tight mb-2.5 m-0 font-sans">
+                Color Grading
+              </h3>
+
+              <!-- Description -->
+              <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed font-normal m-0 mb-6 font-sans">
+                Cinematic color treatment, custom LUT development, and tonal refinement to create a consistent and professional visual look.
+              </p>
+            </div>
+
+            <!-- Bottom Indicator: 04 — -->
+            <div class="flex items-center gap-2 pt-2 border-t border-white/5">
+              <span class="text-xs font-mono font-bold text-[#E53935]">04</span>
+              <span class="service-indicator-line"></span>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Centered Explore Work CTA Button -->
+        <div class="mt-12 sm:mt-14 text-center">
+          <a href="#work" class="services-explore-btn group" aria-label="Explore Selected Work">
+            <span>Explore Work</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WHO I AM / ABOUT SECTION (MINIMAL EDITORIAL REBUILD)
+         ============================================================ -->
+    <section id="about" class="who-i-am-section w-full bg-[#F7F6F2] text-[#171717] font-sans">
+      <div class="max-w-5xl mx-auto w-full">
+        
+        <!-- 1. Top Small Label with Thin Red Underline -->
+        <div class="inline-block mb-6 text-left">
+          <span class="text-xs uppercase tracking-[0.25em] font-bold text-[#171717] block">WHO I AM</span>
+          <span class="block w-10 h-[2px] bg-[#EF3838] mt-1.5"></span>
+        </div>
+
+        <!-- 2. Wide Horizontal Red Accent Bar with Main Heading -->
+        <div class="relative w-full bg-[#EF3838] px-6 py-6 sm:px-10 sm:py-8 text-left shadow-sm">
+          <h2 class="text-white text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight leading-[1.2] max-w-2xl m-0 font-sans">
+            Video Editor &amp; Motion Designer based out of Delhi NCR
+          </h2>
+        </div>
+
+        <!-- 3. Two-Column Editorial Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-start mt-8 lg:mt-0 text-left">
+          
+          <!-- Left Column: About Copy -->
+          <div class="order-2 lg:order-1 lg:col-span-7 flex flex-col gap-5 lg:pt-10">
+            <p class="text-base sm:text-lg text-[#171717] font-semibold leading-relaxed m-0">
+              I’m Ritesh Sinha, a Video Editor &amp; Motion Designer focused on turning ideas and raw footage into engaging, polished visual stories.
+            </p>
+            
+            <p class="text-sm sm:text-base text-[#171717]/85 font-normal leading-relaxed m-0">
+              With expertise in Adobe Premiere Pro and After Effects, I work across video editing, motion graphics, visual storytelling, and content for brands, creators, and businesses. I focus on strong pacing, clean visuals, purposeful motion, and details that keep viewers engaged.
+            </p>
+
+            <p class="text-sm sm:text-base text-[#171717]/85 font-normal leading-relaxed m-0">
+              Whether it’s a brand film, social media content, promotional video, or motion-led visual, my goal is simple — make every frame communicate, connect, and leave an impact.
+            </p>
+
+            <!-- Subtle "MORE ABOUT ME →" Text Link with Thin Red Underline -->
+            <div class="pt-3">
+              <a href="#contact" class="group inline-flex items-center gap-2 text-xs uppercase tracking-[0.2em] font-bold text-[#171717] hover:text-[#EF3838] transition-colors duration-200 no-underline pb-1 border-b border-[#EF3838]">
+                <span>MORE ABOUT ME</span>
+                <span class="transition-transform duration-200 group-hover:translate-x-1">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Clean Rectangular Portrait Overlapping Red Bar on Desktop -->
+          <div class="order-1 lg:order-2 lg:col-span-5 flex justify-center lg:justify-end">
+            <div class="relative z-10 w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[340px] lg:-mt-14">
+              <div class="overflow-hidden rounded-xl shadow-xl border border-black/5 bg-neutral-200 aspect-[4/5]">
+                <img 
+                  src="IMG_20190505_232852_065.jpg" 
+                  alt="Ritesh Sinha - Video Editor &amp; Motion Designer" 
+                  class="w-full h-full object-cover object-center"
+                />
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CORE TOOLKIT & EXPERTISE SECTION (2026 CLIENT-FOCUSED REDESIGN)
+         ============================================================ -->
+    <section id="toolkit" class="toolkit-section w-full bg-[#151515] text-white py-20 sm:py-28 px-6 sm:px-8 font-sans">
+      <div class="max-w-6xl mx-auto w-full">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-12 sm:mb-16">
+          <!-- Eyebrow -->
+          <div class="inline-flex items-center justify-center gap-3 mb-2 sm:mb-3">
+            <span class="text-[11px] sm:text-xs uppercase tracking-[0.25em] font-bold text-[#E53935]">
+              TOOLS THAT BRING IDEAS TO LIFE
+            </span>
+            <span class="w-7 h-[1px] bg-[#E53935]/60 inline-block"></span>
+          </div>
+
+          <!-- Main Heading -->
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight m-0 font-sans">
+            Core Toolkit &amp; <span class="text-[#E53935]">Expertise</span>
+          </h2>
+
+          <!-- Subtitle -->
+          <p class="text-[10px] sm:text-xs uppercase tracking-[0.22em] font-bold text-gray-400 mt-2.5 sm:mt-3 m-0">
+            TOOLS, TECHNIQUES &amp; CREATIVE EXPERTISE
+          </p>
+        </div>
+
+        <!-- 6 Expertise Cards (2-Column Grid) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-7">
+          
+          <!-- CARD 01: ADOBE PREMIERE PRO (Visual Hierarchy: highlighted border) -->
+          <div class="toolkit-card group relative bg-[#1E1E1E] rounded-2xl p-6 sm:p-7 border border-[#E53935]/70 shadow-[0_0_20px_-5px_rgba(229,57,53,0.18)] transition-all duration-300 flex gap-5 sm:gap-6 items-start">
+            <!-- Left: Icon Mark + Accent Line -->
+            <div class="flex flex-col items-center shrink-0 self-stretch justify-between">
+              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-[#141414] border border-white/10 flex items-center justify-center text-xl sm:text-2xl font-black text-[#ff6584] shadow-inner">
+                Pr
+              </div>
+              <div class="toolkit-card-line w-7 h-[3.5px] bg-[#E53935] rounded-full mt-auto pt-[3.5px] transition-all duration-300 group-hover:w-11"></div>
+            </div>
+            <!-- Right: Content -->
+            <div class="flex-1 min-w-0 text-left">
+              <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.18em] text-gray-400">ADOBE PREMIERE PRO</span>
+                <span class="text-xs sm:text-sm font-mono font-bold text-gray-500">01</span>
+              </div>
+              <h3 class="text-lg sm:text-xl font-bold text-white tracking-tight mb-2 m-0">
+                Video Editing &amp; Storytelling
+              </h3>
+              <p class="text-xs sm:text-sm text-gray-400 leading-relaxed font-normal m-0">
+                Editorial pacing, narrative structure, clean cuts, transitions, and polished social, commercial, and branded content.
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD 02: ADOBE AFTER EFFECTS -->
+          <div class="toolkit-card group relative bg-[#1E1E1E] rounded-2xl p-6 sm:p-7 border border-[#2C2C2C] hover:border-[#E53935] transition-all duration-300 flex gap-5 sm:gap-6 items-start">
+            <!-- Left: Icon Mark + Accent Line -->
+            <div class="flex flex-col items-center shrink-0 self-stretch justify-between">
+              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-[#141414] border border-white/10 flex items-center justify-center text-xl sm:text-2xl font-black text-[#ff6584] shadow-inner">
+                Ae
+              </div>
+              <div class="toolkit-card-line w-7 h-[3.5px] bg-[#E53935] rounded-full mt-auto pt-[3.5px] transition-all duration-300 group-hover:w-11"></div>
+            </div>
+            <!-- Right: Content -->
+            <div class="flex-1 min-w-0 text-left">
+              <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.18em] text-gray-400">ADOBE AFTER EFFECTS</span>
+                <span class="text-xs sm:text-sm font-mono font-bold text-gray-500">02</span>
+              </div>
+              <h3 class="text-lg sm:text-xl font-bold text-white tracking-tight mb-2 m-0">
+                Motion Design &amp; VFX
+              </h3>
+              <p class="text-xs sm:text-sm text-gray-400 leading-relaxed font-normal m-0">
+                Kinetic typography, logo animation, 2D motion graphics, visual effects, compositing, and micro-animations.
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD 03: MOTION DESIGN -->
+          <div class="toolkit-card group relative bg-[#1E1E1E] rounded-2xl p-6 sm:p-7 border border-[#2C2C2C] hover:border-[#E53935] transition-all duration-300 flex gap-5 sm:gap-6 items-start">
+            <!-- Left: Icon Mark + Accent Line -->
+            <div class="flex flex-col items-center shrink-0 self-stretch justify-between">
+              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-[#141414] border border-white/10 flex items-center justify-center text-[#ff6584] shadow-inner">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2L2 19.5h20L12 2zm0 5l6.5 10.5h-13L12 7z"/>
+                  <circle cx="12" cy="14" r="2"/>
+                </svg>
+              </div>
+              <div class="toolkit-card-line w-7 h-[3.5px] bg-[#E53935] rounded-full mt-auto pt-[3.5px] transition-all duration-300 group-hover:w-11"></div>
+            </div>
+            <!-- Right: Content -->
+            <div class="flex-1 min-w-0 text-left">
+              <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.18em] text-gray-400">MOTION DESIGN</span>
+                <span class="text-xs sm:text-sm font-mono font-bold text-gray-500">03</span>
+              </div>
+              <h3 class="text-lg sm:text-xl font-bold text-white tracking-tight mb-2 m-0">
+                Kinetic Typography &amp; Animation
+              </h3>
+              <p class="text-xs sm:text-sm text-gray-400 leading-relaxed font-normal m-0">
+                Designing motion systems that add energy, clarity, and personality to video content without overwhelming the story.
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD 04: SOUND DESIGN -->
+          <div class="toolkit-card group relative bg-[#1E1E1E] rounded-2xl p-6 sm:p-7 border border-[#2C2C2C] hover:border-[#E53935] transition-all duration-300 flex gap-5 sm:gap-6 items-start">
+            <!-- Left: Icon Mark + Accent Line -->
+            <div class="flex flex-col items-center shrink-0 self-stretch justify-between">
+              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-[#141414] border border-white/10 flex items-center justify-center text-[#ff6584] shadow-inner">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <rect x="3" y="10" width="2.5" height="4" rx="1"/>
+                  <rect x="7.5" y="6" width="2.5" height="12" rx="1"/>
+                  <rect x="12" y="3" width="2.5" height="18" rx="1"/>
+                  <rect x="16.5" y="7" width="2.5" height="10" rx="1"/>
+                  <rect x="21" y="10" width="2.5" height="4" rx="1"/>
+                </svg>
+              </div>
+              <div class="toolkit-card-line w-7 h-[3.5px] bg-[#E53935] rounded-full mt-auto pt-[3.5px] transition-all duration-300 group-hover:w-11"></div>
+            </div>
+            <!-- Right: Content -->
+            <div class="flex-1 min-w-0 text-left">
+              <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.18em] text-gray-400">SOUND DESIGN</span>
+                <span class="text-xs sm:text-sm font-mono font-bold text-gray-500">04</span>
+              </div>
+              <h3 class="text-lg sm:text-xl font-bold text-white tracking-tight mb-2 m-0">
+                Audio &amp; Dialogue
+              </h3>
+              <p class="text-xs sm:text-sm text-gray-400 leading-relaxed font-normal m-0">
+                Dialogue cleanup, sound effects, music editing, audio transitions, and detailed sound layering to strengthen the viewing experience.
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD 05: ADOBE PHOTOSHOP -->
+          <div class="toolkit-card group relative bg-[#1E1E1E] rounded-2xl p-6 sm:p-7 border border-[#2C2C2C] hover:border-[#E53935] transition-all duration-300 flex gap-5 sm:gap-6 items-start">
+            <!-- Left: Icon Mark + Accent Line -->
+            <div class="flex flex-col items-center shrink-0 self-stretch justify-between">
+              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-[#141414] border border-white/10 flex items-center justify-center text-xl sm:text-2xl font-black text-[#ff6584] shadow-inner">
+                Ps
+              </div>
+              <div class="toolkit-card-line w-7 h-[3.5px] bg-[#E53935] rounded-full mt-auto pt-[3.5px] transition-all duration-300 group-hover:w-11"></div>
+            </div>
+            <!-- Right: Content -->
+            <div class="flex-1 min-w-0 text-left">
+              <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.18em] text-gray-400">ADOBE PHOTOSHOP</span>
+                <span class="text-xs sm:text-sm font-mono font-bold text-gray-500">05</span>
+              </div>
+              <h3 class="text-lg sm:text-xl font-bold text-white tracking-tight mb-2 m-0">
+                Visual Assets &amp; Compositing
+              </h3>
+              <p class="text-xs sm:text-sm text-gray-400 leading-relaxed font-normal m-0">
+                Creating and preparing custom visual assets, thumbnails, compositions, and supporting graphics for video projects.
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD 06: EDITORIAL STORYTELLING -->
+          <div class="toolkit-card group relative bg-[#1E1E1E] rounded-2xl p-6 sm:p-7 border border-[#2C2C2C] hover:border-[#E53935] transition-all duration-300 flex gap-5 sm:gap-6 items-start">
+            <!-- Left: Icon Mark + Accent Line -->
+            <div class="flex flex-col items-center shrink-0 self-stretch justify-between">
+              <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-[#141414] border border-white/10 flex items-center justify-center text-[#ff6584] shadow-inner">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 4h-2.5l2 3H16l-2-3h-2.5l2 3H11L9 4H6.5l2 3H6L4 4H3a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zM3 9h18v9H3V9z"/>
+                </svg>
+              </div>
+              <div class="toolkit-card-line w-7 h-[3.5px] bg-[#E53935] rounded-full mt-auto pt-[3.5px] transition-all duration-300 group-hover:w-11"></div>
+            </div>
+            <!-- Right: Content -->
+            <div class="flex-1 min-w-0 text-left">
+              <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.18em] text-gray-400">EDITORIAL STORYTELLING</span>
+                <span class="text-xs sm:text-sm font-mono font-bold text-gray-500">06</span>
+              </div>
+              <h3 class="text-lg sm:text-xl font-bold text-white tracking-tight mb-2 m-0">
+                Pacing &amp; Visual Narrative
+              </h3>
+              <p class="text-xs sm:text-sm text-gray-400 leading-relaxed font-normal m-0">
+                Using rhythm, timing, shot selection, music, motion, and structure to turn raw footage into engaging visual stories.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         MY WORK SECTION (LONG-FORM VIDEO EDITING SHOWCASE)
+         ============================================================ -->
+    <section class="work-section" id="work">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-14 md:mb-16">
+          <div class="inline-flex items-center gap-3 justify-center mb-3 sm:mb-4">
+            <span class="inline-flex items-center text-[#E53935]">
+              <svg width="40" height="8" viewBox="0 0 40 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0" y1="4" x2="32" y2="4" stroke="#E53935" stroke-width="1.5" />
+                <polygon points="32,1 38,4 32,7" fill="#E53935" />
+              </svg>
+            </span>
+            <span class="text-xs sm:text-sm font-extrabold uppercase tracking-[0.25em] text-[#E53935]">SELECTED WORK</span>
+            <span class="inline-flex items-center text-[#E53935]">
+              <svg width="40" height="8" viewBox="0 0 40 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="8,1 2,4 8,7" fill="#E53935" />
+                <line x1="8" y1="4" x2="40" y2="4" stroke="#E53935" stroke-width="1.5" />
+              </svg>
+            </span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight m-0 mb-4">
+            Long Format <span class="text-[#E53935]">Videos</span>
+          </h2>
+
+          <p class="text-xs sm:text-sm md:text-base text-neutral-400 max-w-2xl mx-auto leading-relaxed font-normal m-0">
+            In-depth stories, sharper edits, and engaging narratives. These long-form projects showcase my approach to storytelling, pacing, sound design and visual direction.
+          </p>
+        </div>
+
+        <!-- Project Grid (4 columns on desktop, 2 on tablet, 1 on mobile) -->
+        <div id="projects-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- PROJECT 01: MOTION GRAPHICS -->
+          <article
+            class="work-card p-4 sm:p-5 flex flex-col justify-between group cursor-pointer"
+            data-project-id="01"
+            data-youtube-url="https://www.youtube.com/watch?v=FcdxPQG6LtE"
+            onclick="if (!event.target.closest('a')) window.open('https://www.youtube.com/watch?v=FcdxPQG6LtE', '_blank', 'noopener,noreferrer')"
+          >
+            <div>
+              <div class="flex items-center gap-2 mb-3.5">
+                <span class="text-xs font-bold font-mono text-[#E53935]">01</span>
+                <span class="w-3.5 h-[1.5px] bg-[#E53935] inline-block"></span>
+                <span class="text-[11px] font-bold uppercase tracking-[0.16em] text-white/90">MOTION GRAPHICS</span>
+              </div>
+
+              <a
+                href="https://www.youtube.com/watch?v=FcdxPQG6LtE"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block relative work-thumb-container focus:outline-none focus:ring-2 focus:ring-[#E53935] mb-4"
+                aria-label="Watch futurepedia v2 on YouTube"
+              >
+                <img
+                  src="https://img.youtube.com/vi/FcdxPQG6LtE/maxresdefault.jpg"
+                  onerror="this.onerror=null; this.src='https://img.youtube.com/vi/FcdxPQG6LtE/hqdefault.jpg';"
+                  alt="futurepedia v2 - Video Thumbnail"
+                  class="work-thumb-img"
+                  loading="lazy"
+                />
+                <div class="work-thumb-overlay"></div>
+
+                <div class="work-play-badge" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-0.5 fill-current" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+
+                <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/85 backdrop-blur-sm text-[11px] font-mono font-semibold text-white/95 pointer-events-none tracking-tight">
+                  0:14
+                </div>
+              </a>
+
+              <h3 class="text-base sm:text-lg font-bold text-white tracking-tight leading-snug mb-1 m-0">
+                <a
+                  href="https://www.youtube.com/watch?v=FcdxPQG6LtE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:text-[#E53935] transition-colors no-underline text-white"
+                >
+                  futurepedia v2
+                </a>
+              </h3>
+
+              <div class="text-xs font-medium text-neutral-400 mb-3">
+                Motion Graphics | 2024
+              </div>
+
+              <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed font-normal mb-5 m-0">
+                A quick, high-impact motion graphics piece with bold visuals and smooth transitions.
+              </p>
+            </div>
+
+            <div class="pt-2">
+              <a
+                href="https://www.youtube.com/watch?v=FcdxPQG6LtE"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="work-cta-link inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-[#E53935] hover:underline no-underline"
+                aria-label="Watch futurepedia v2 on YouTube"
+              >
+                <span>WATCH ON YOUTUBE</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 02: EXPLAINER -->
+          <article
+            class="work-card p-4 sm:p-5 flex flex-col justify-between group cursor-pointer"
+            data-project-id="02"
+            data-youtube-url="https://www.youtube.com/watch?v=sBrZnyilBKs"
+            onclick="if (!event.target.closest('a')) window.open('https://www.youtube.com/watch?v=sBrZnyilBKs', '_blank', 'noopener,noreferrer')"
+          >
+            <div>
+              <div class="flex items-center gap-2 mb-3.5">
+                <span class="text-xs font-bold font-mono text-[#E53935]">02</span>
+                <span class="w-3.5 h-[1.5px] bg-[#E53935] inline-block"></span>
+                <span class="text-[11px] font-bold uppercase tracking-[0.16em] text-white/90">EXPLAINER</span>
+              </div>
+
+              <a
+                href="https://www.youtube.com/watch?v=sBrZnyilBKs"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block relative work-thumb-container focus:outline-none focus:ring-2 focus:ring-[#E53935] mb-4"
+                aria-label="Watch AI LITERACY VIDEO on YouTube"
+              >
+                <img
+                  src="https://img.youtube.com/vi/sBrZnyilBKs/maxresdefault.jpg"
+                  onerror="this.onerror=null; this.src='https://img.youtube.com/vi/sBrZnyilBKs/hqdefault.jpg';"
+                  alt="AI LITERACY VIDEO - Video Thumbnail"
+                  class="work-thumb-img"
+                  loading="lazy"
+                />
+                <div class="work-thumb-overlay"></div>
+
+                <div class="work-play-badge" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-0.5 fill-current" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+
+                <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/85 backdrop-blur-sm text-[11px] font-mono font-semibold text-white/95 pointer-events-none tracking-tight">
+                  0:58
+                </div>
+              </a>
+
+              <h3 class="text-base sm:text-lg font-bold text-white tracking-tight leading-snug mb-1 m-0">
+                <a
+                  href="https://www.youtube.com/watch?v=sBrZnyilBKs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:text-[#E53935] transition-colors no-underline text-white"
+                >
+                  AI LITERACY VIDEO
+                </a>
+              </h3>
+
+              <div class="text-xs font-medium text-neutral-400 mb-3">
+                Explainer Video | 2024
+              </div>
+
+              <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed font-normal mb-5 m-0">
+                A data-driven explainer on AI literacy with clean visuals, clear structure and impactful messaging.
+              </p>
+            </div>
+
+            <div class="pt-2">
+              <a
+                href="https://www.youtube.com/watch?v=sBrZnyilBKs"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="work-cta-link inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-[#E53935] hover:underline no-underline"
+                aria-label="Watch AI LITERACY VIDEO on YouTube"
+              >
+                <span>WATCH ON YOUTUBE</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 03: SHORT FORM -->
+          <article
+            class="work-card p-4 sm:p-5 flex flex-col justify-between group cursor-pointer"
+            data-project-id="03"
+            data-youtube-url="https://www.youtube.com/watch?v=WEdmOVyOpb8"
+            onclick="if (!event.target.closest('a')) window.open('https://www.youtube.com/watch?v=WEdmOVyOpb8', '_blank', 'noopener,noreferrer')"
+          >
+            <div>
+              <div class="flex items-center gap-2 mb-3.5">
+                <span class="text-xs font-bold font-mono text-[#E53935]">03</span>
+                <span class="w-3.5 h-[1.5px] bg-[#E53935] inline-block"></span>
+                <span class="text-[11px] font-bold uppercase tracking-[0.16em] text-white/90">SHORT FORM</span>
+              </div>
+
+              <a
+                href="https://www.youtube.com/watch?v=WEdmOVyOpb8"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block relative work-thumb-container focus:outline-none focus:ring-2 focus:ring-[#E53935] mb-4"
+                aria-label="Watch theo t3 on YouTube"
+              >
+                <img
+                  src="https://img.youtube.com/vi/WEdmOVyOpb8/maxresdefault.jpg"
+                  onerror="this.onerror=null; this.src='https://img.youtube.com/vi/WEdmOVyOpb8/hqdefault.jpg';"
+                  alt="theo t3 - Video Thumbnail"
+                  class="work-thumb-img"
+                  loading="lazy"
+                />
+                <div class="work-thumb-overlay"></div>
+
+                <div class="work-play-badge" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-0.5 fill-current" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+
+                <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/85 backdrop-blur-sm text-[11px] font-mono font-semibold text-white/95 pointer-events-none tracking-tight">
+                  0:27
+                </div>
+              </a>
+
+              <h3 class="text-base sm:text-lg font-bold text-white tracking-tight leading-snug mb-1 m-0">
+                <a
+                  href="https://www.youtube.com/watch?v=WEdmOVyOpb8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:text-[#E53935] transition-colors no-underline text-white"
+                >
+                  theo t3
+                </a>
+              </h3>
+
+              <div class="text-xs font-medium text-neutral-400 mb-3">
+                Short Form Edit | 2024
+              </div>
+
+              <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed font-normal mb-5 m-0">
+                A sharp, minimal edit with a clean, modern look and engaging pacing.
+              </p>
+            </div>
+
+            <div class="pt-2">
+              <a
+                href="https://www.youtube.com/watch?v=WEdmOVyOpb8"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="work-cta-link inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-[#E53935] hover:underline no-underline"
+                aria-label="Watch theo t3 on YouTube"
+              >
+                <span>WATCH ON YOUTUBE</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 04: PODCAST EDIT -->
+          <article
+            class="work-card p-4 sm:p-5 flex flex-col justify-between group cursor-pointer"
+            data-project-id="04"
+            data-youtube-url="https://www.youtube.com/watch?v=3nsIvsExMWg"
+            onclick="if (!event.target.closest('a')) window.open('https://www.youtube.com/watch?v=3nsIvsExMWg', '_blank', 'noopener,noreferrer')"
+          >
+            <div>
+              <div class="flex items-center gap-2 mb-3.5">
+                <span class="text-xs font-bold font-mono text-[#E53935]">04</span>
+                <span class="w-3.5 h-[1.5px] bg-[#E53935] inline-block"></span>
+                <span class="text-[11px] font-bold uppercase tracking-[0.16em] text-white/90">PODCAST EDIT</span>
+              </div>
+
+              <a
+                href="https://www.youtube.com/watch?v=3nsIvsExMWg"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block relative work-thumb-container focus:outline-none focus:ring-2 focus:ring-[#E53935] mb-4"
+                aria-label="Watch Gut health podcast intro on YouTube"
+              >
+                <img
+                  src="https://img.youtube.com/vi/3nsIvsExMWg/maxresdefault.jpg"
+                  onerror="this.onerror=null; this.src='https://img.youtube.com/vi/3nsIvsExMWg/hqdefault.jpg';"
+                  alt="Gut health podcast intro - Video Thumbnail"
+                  class="work-thumb-img"
+                  loading="lazy"
+                />
+                <div class="work-thumb-overlay"></div>
+
+                <div class="work-play-badge" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-0.5 fill-current" viewBox="0 0 24 24">
+                    <path d="M8 5v14l11-7z" />
+                  </svg>
+                </div>
+
+                <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded bg-black/85 backdrop-blur-sm text-[11px] font-mono font-semibold text-white/95 pointer-events-none tracking-tight">
+                  0:27
+                </div>
+              </a>
+
+              <h3 class="text-base sm:text-lg font-bold text-white tracking-tight leading-snug mb-1 m-0">
+                <a
+                  href="https://www.youtube.com/watch?v=3nsIvsExMWg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hover:text-[#E53935] transition-colors no-underline text-white"
+                >
+                  Gut health podcast intro
+                </a>
+              </h3>
+
+              <div class="text-xs font-medium text-neutral-400 mb-3">
+                Podcast Edit | 2024
+              </div>
+
+              <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed font-normal mb-5 m-0">
+                A short intro edit for a gut health podcast, with clean visuals and smooth motion.
+              </p>
+            </div>
+
+            <div class="pt-2">
+              <a
+                href="https://www.youtube.com/watch?v=3nsIvsExMWg"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="work-cta-link inline-flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-[#E53935] hover:underline no-underline"
+                aria-label="Watch Gut health podcast intro on YouTube"
+              >
+                <span>WATCH ON YOUTUBE</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Bottom CTA Button -->
+        <div class="mt-12 sm:mt-14 text-center">
+          <a
+            id="youtube-channel-btn"
+            href="https://www.youtube.com/@riteshwho"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="work-channel-btn group"
+            aria-label="View more videos on YouTube channel"
+          >
+            <span>VIEW MORE ON YOUTUBE</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <footer class="footer" id="contact">
+      <a href="mailto:riteshmotionedit@gmail.com" class="footer-link"
+        >riteshmotionedit@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a href="https://instagram.com" class="social-list__link"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a
+            href="https://www.linkedin.com/in/ritesh-sinha-099b931a2"
+            class="social-list__link"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://github.com/riteshwho" class="social-list__link"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a href="https://twitter.com" class="social-list__link"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

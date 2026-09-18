@@ -959,12 +959,17 @@ header {
 .social-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  margin: 2em 0 0;
-  padding: 0;
+  margin: 1.75em 0 0;
+  padding: 0 1rem;
+  gap: 0.5rem 0.25rem;
 }
 .social-list__item {
-  margin: 0 0.5em;
+  margin: 0 0.35em;
+  display: inline-flex;
+  align-items: center;
 }
 
 

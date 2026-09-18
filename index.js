@@ -40,13 +40,13 @@ window.PORTFOLIO_CONFIG = {
     },
     {
       id: "04",
-      category: "EXPLAINER",
-      title: "Theo T3 Explainer",
-      metadata: "Explainer Video | 2024",
-      year: "2024",
+      category: "BUSINESS / EXPLAINER",
+      title: "Investing in right business",
+      metadata: "Business / Explainer Video | 2026",
+      year: "2026",
       description: "A data-driven explainer with crisp audio, focused narrative structure, and dynamic editorial cuts.",
-      thumbnail: "images/theo_t3_custom.png",
-      youtubeUrl: "https://www.youtube.com/watch?v=WEdmOVyOpb8"
+      thumbnail: "images/investing_in_right_business.png",
+      youtubeUrl: "https://youtu.be/FV93jNnzW0M"
     },
     {
       id: "05",
